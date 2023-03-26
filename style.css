@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap");
+
+:root {
+  --dark: #1c1d25;
+  --darker: #0d1924;
+  --light: #e4e5d4;
+  --lighter: #fbfde9;
+  --orange: #f66132;
+  --purple: #8c3cbe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  background-color: var(--lighter);
+  font-size: 18px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+hr {
+  height: 3px;
+  background-color: var(--purple);
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+nav a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #8c3cbe;
+  transition: 0.3s ease-in-out;
+}
+
+nav p {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#title h1 {
+  font-family: "Libre Barcode 128 Text", cursive;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+#banner-section {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top: 10%;
+  gap: 6%;
+  height: 60vh;
+}
+
+#title {
+  flex-basis: 70%;
+}
+
+#banner-graphics {
+  flex-basis: 30%;
+}
+
+/* projects section */
+
+#projects-section {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#projects-grid {
+  display: flex;
+  column-gap: 3%;
+  width: 100%;
+}
+
+#projects-grid a {
+  border: 2.5px solid;
+  padding-top: 20%;
+  padding-left: 6%;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--dark);
+  width: 100%;
+}
+
+#projects-grid a:hover {
+  color: var(--purple);
+}
+
+button {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 18px;
+  border: 0;
+  background-color: #1c1d2500;
+}
+
+button:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #8c3cbe;
+  transition: 0.3s ease-in-out;
+}
+
+/* projects hover */
+
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover,
+.hvr-forward:focus,
+.hvr-forward:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+#about {
+  margin-bottom: 4rem;
+}
+
+/* PROJECTS PICTURES */
+
+#projects-grid a h3,
+#projects-grid a h4 {
+  display: none;
+}
+
+#projects-grid a h3,
+#projects-grid a h4 {
+  display: none;
+}
+
+.fonts-components {
+  background-image: url("pictures/fonts_color.jpg");
+  background-size: cover;
+}
+
+.responsive {
+  background-image: url("pictures/responsive_horizontal_normsl.jpg");
+  background-size: cover;
+}
+
+.animations {
+  background-image: url("pictures/animations.jpg");
+  background-size: cover;
+}
+
+#links {
+  display: flex;
+  gap: 3rem;
+}
+
+#links p,
+#links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+#links a:hover {
+  color: var(--purple);
+}
+
+/* DARK MODE */
+
+.dark-mode {
+  background-color: var(--dark);
+  color: var(--lighter);
+}
+
+.dark-mode a {
+  color: var(--lighter);
+}
+
+.dark-mode button {
+  color: var(--lighter);
+}
+
+.dark-mode button:hover {
+  text-decoration-color: var(--orange);
+}
+
+.dark-mode a:hover {
+  text-decoration-color: var(--orange);
+}
+
+.dark-mode hr {
+  background-color: var(--orange);
+}
+
+.dark-mode #projects-grid a {
+  color: var(--light);
+}
+
+.dark-mode #projects-grid a:hover {
+  color: var(--orange);
+}
+
+.dark-mode #links a:hover {
+  color: var(--orange);
+}
+
+.dark-mode #links a,
+.dark-mode #links p {
+  color: var(--lighter);
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  #banner-graphics {
+    display: none;
+  }
+
+  #banner-section {
+    flex-direction: column;
+  }
+
+  nav a p {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  ul {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  #projects-grid {
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+  }
+
+  #projects-grid a {
+    height: 10rem;
+  }
+
+  #links {
+    flex-direction: column;
+  }
+
+  #links p,
+  #links a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--dark);
+  }
+}
