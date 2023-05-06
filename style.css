@@ -253,10 +253,6 @@ h3 {
 }
 
 .dark-mode #projects-grid a {
-  color: var(--light);
-}
-
-.dark-mode #projects-grid a:hover {
   color: var(--orange);
 }
 
