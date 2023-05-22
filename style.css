@@ -109,7 +109,6 @@ h2 {
 }
 
 #projects-grid a {
-  border: 2.5px solid;
   padding-top: 20%;
   padding-left: 6%;
   border-radius: 25px;
@@ -188,18 +187,38 @@ h3 {
 }
 
 .fonts-components {
-  background-image: url("pictures/fonts_color.jpg");
-  background-size: cover;
+  background-image: url("pictures/typography.svg");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+.fonts-components:hover {
+  background-image: url("pictures/typography-purple.svg");
 }
 
 .responsive {
-  background-image: url("pictures/responsive.jpg");
+  background-image: url("pictures/responsive.svg");
   background-size: cover;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+.responsive:hover {
+  background-image: url("pictures/responsive-purple.svg");
 }
 
 .animations {
-  background-image: url("pictures/animations.jpg");
+  background-image: url("pictures/colors-animation.svg");
   background-size: cover;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+.animations:hover {
+  background-image: url("pictures/colors-animation-purple.svg");
 }
 
 #links {
@@ -230,6 +249,30 @@ h3 {
 .dark-mode {
   background-color: var(--dark);
   color: var(--lighter);
+}
+
+.dark-mode .fonts-components {
+  background-image: url("pictures/typography-light.svg");
+}
+
+.dark-mode .fonts-components:hover {
+  background-image: url("pictures/typography-orange.svg");
+}
+
+.dark-mode .responsive {
+  background-image: url("pictures/responsive-light.svg");
+}
+
+.dark-mode .responsive:hover {
+  background-image: url("pictures/responsive-orange.svg");
+}
+
+.dark-mode .animations {
+  background-image: url("pictures/colors-animation-light.svg");
+}
+
+.dark-mode .animations:hover {
+  background-image: url("pictures/colors-animation-orange.svg");
 }
 
 .dark-mode a {
